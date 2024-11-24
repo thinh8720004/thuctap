@@ -1,0 +1,127 @@
+/* Register.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.register-container {
+  background-color: #fff;
+  padding: 40px;
+  width: 450px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 5px;
+}
+
+.register-container h2 {
+  margin-bottom: 20px;
+  
+}
+
+.register-form input {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.register-form button {
+  width: 50%;
+  padding: 10px;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.register-form button:hover {
+  background-color: #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+}
+
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  color: #333;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #888;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  margin: 0 10px;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.login-prompt {
+  font-size: 14px;
+  color: #333;
+}
+
+.login-link {
+  color: red;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  font-size: 0.9em;
+  margin-top: 10px;
+}

@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Register from './components/register/register';
+import Login from './components/login/login';
+import ForgotPassword from './components/forgetPassword/forgetPassword';
+import AccountTable from './components/account/AccountTable';
+import OTPInput from './components/otp/otp';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Thêm layout hoặc navigation ở đây nếu cần */}
+      <Routes>
+        <Route path="/" element={<div>Home Page</div>} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/account-table" element={<AccountTable />} />
+        <Route path="/otp" element={<OTPInput />} />
+
+      </Routes>
     </div>
   );
 }
